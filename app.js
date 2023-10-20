@@ -9,9 +9,12 @@ const port = 3000;
 app.use(morgan("combined"));
 
 app.get("/", (req, res) => {
-  res.send("Hello world");
+    res.render("index", {
+        username: "PondPond",
+        customers: ["One", "Two", "Three"],
+    });
 });
 
 app.listen(port, () => {
-  debug("Listen on port " + chalk.green(port));
+    debug("Listen on port " + chalk.green(port));
 });
