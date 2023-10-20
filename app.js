@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const path = require("path");
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 5000;
 
 app.use(morgan("combined"));
 app.use(express.static(path.join(__dirname, "/public/")));
@@ -17,6 +17,6 @@ app.get("/", (req, res) => {
     });
 });
 
-app.listen(port, () => {
-    debug("Listen on port " + chalk.green(port));
+app.listen(PORT, () => {
+    debug("Listen on port " + chalk.red(" : " + PORT));
 });
