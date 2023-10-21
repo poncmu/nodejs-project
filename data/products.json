@@ -1,20 +1,24 @@
 {
     "products": [{
+            "id": 0,
             "productTitle": "น้ำยาล้างจาน",
             "productDescription": "สูตร 1 ดีเลศ",
             "productPrice": 25
         },
         {
+            "id": 1,
             "productTitle": "น้ำยาล้างจาน",
             "productDescription": "สูตร 2 ดีเลศ",
             "productPrice": 35
         },
         {
+            "id": 2,
             "productTitle": "น้ำยาล้างจาน",
             "productDescription": "สูตร 3 ดีเลศ",
             "productPrice": 45
         },
         {
+            "id": 3,
             "productTitle": "น้ำยาล้างจาน",
             "productDescription": "สูตร 4 ดีเลศ",
             "productPrice": 55
